@@ -245,7 +245,7 @@ bestEnsembleComplexTSP <- function(test_exp, stageIdxSmp = NULL, TSPFold = 2, be
 			return(highCorTour$result)
 		}
 		stopCluster(cl)
-		closeAllConnections()
+		#closeAllConnections()
 		resultLst <- rbind(baseResult, resultLst)
 		if (debug == TRUE)
 			message(Sys.time())
